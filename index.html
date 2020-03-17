@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Lihq - 导航站</title>
-    <!-- <link rel="shortcut icon" href="../favcion.ico" /> -->
     <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href=" css/iconfont.css">
-    <!-- <link rel="stylesheet" href="../plug-in/normalize.css"> -->
+    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,20 +14,21 @@
     <div class="container" id="container">
         <aside class="left-bar" id="leftBar">
             <div class="title">
-                <p>导航</p>
+                <p><a target="_self" href="/" style="color: white">Lihq - 导航站</a></p>
             </div>
             <nav class="nav">
-                <div class="item active"><a href="#search"><i class="iconfont icon-daohang2"></i>Search</a><i class="line"></i></div>
                 <ul class="nav-item" id="navItem">
-                	<li><a href="#devtools" class="active"><i class="iconfont icon-tool"></i>开发小能手</a></li>
-                	<li><a href="#tools"><i class="iconfont icon-tool"></i>实用工具</a></li>
-					<li><a href="#often"><i class="iconfont icon-daohang1"></i>常用网站</a></li>
-                    <li><a href="#bbs"><i class="iconfont icon-shequ"></i>开发社区</a></li>
-                    <li><a href="#sill"><i class="iconfont icon-blogger"></i>技术博客</a></li>
-                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>开发文档</a></li>
-                    <li><a href="#design"><i class="iconfont icon-designer"></i>设计资源</a></li>
-                    <li><a href="#study"><i class="iconfont icon-xuexi1"></i>学无止境</a></li>
-                    <li><a href="#operation"><i class="iconfont icon-yunying"></i>网络运营</a></li>
+                	<li><a href="#search" class="active"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
+                	<li><a href="#mine"><i class="fa fa-user" aria-hidden="true"></i> 个人中心</a></li>
+                	<li><a href="#devtools"><i class="fa fa-gavel" aria-hidden="true"></i> 开发小能手</a></li>
+                	<li><a href="#tools"><i class="fa fa-user" aria-hidden="true"></i> 实用工具</a></li>
+					<li><a href="#often"><i class="fa fa-user" aria-hidden="true"></i> 常用网站</a></li>
+                    <li><a href="#bbs"><i class="fa fa-user" aria-hidden="true"></i> 开发社区</a></li>
+                    <li><a href="#sill"><i class="fa fa-user" aria-hidden="true"></i> 技术博客</a></li>
+                    <li><a href="#docs"><i class="fa fa-book" aria-hidden="true"></i> 开发文档</a></li>
+                    <li><a href="#design"><i class="fa fa-user" aria-hidden="true"></i> 设计资源</a></li>
+                    <li><a href="#study"><i class="fa fa-user" aria-hidden="true"></i> 学无止境</a></li>
+                    <li><a href="#operation"><i class="fa fa-user" aria-hidden="true"></i> 网络运营</a></li>
                 </ul>
             </nav>
         </aside>
@@ -71,7 +70,7 @@
 					
 
                     <div style="display: flex; justify-content: center;align-items: center; padding-top: 10px" >
-                   		<div style="display: flex;width: 100%; justify-content: center;">
+                   		<div style="display: flex;width: 60%; justify-content: center;">
                    			<div style="justify-content: center;">
                    				<input type="button" class="search_btn" value="百度" onclick="search_click('baidu')" />
                    				<input type="button" class="search_btn" value="谷歌" onclick="search_click('google')" />
@@ -82,32 +81,65 @@
                    				<input type="button" class="search_btn" value="极客" onclick="search_click('geek')" />
                    				<input type="button" class="search_btn" value="bilibili" onclick="search_click('bilibili')" />
                    				<input type="button" class="search_btn" value="翻译" onclick="search_click('translation')" />
-                   			</div>
+                            </div>
                    		</div>
                     </div>
                    
 
                 </div>
-                  <!-- 开发小能手 -->
+
+                <!-- 个人中心 -->
+                <div class="box">
+                    <a href="" name="mine"></a>
+                    <div class="sub-category">
+                        <div><i class="fa fa-user" aria-hidden="true"></i> 个人中心</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://blog.lihq.xyz">
+                            <div class="item">
+                                <div class="logo"><img src="favicon.ico" alt="BLOG"> 个人博客</div>
+                                <div class="desc">平时的日志记录，技术分享，个人学习，闲聊杂谈</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://github.com/lihq1403">
+                            <div class="item">
+                                <div class="logo"><img src="img/github.ico" alt="GITHUB"> lihq1403</div>
+                                <div class="desc">GITHUB - lihq1403</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 开发小能手 -->
                 <div class="box">
                     <a href="" name="devtools"></a>
                     <div class="sub-category">
-                        <div><i class="iconfont icon-tool"></i>开发小能手</div>
+                        <div><i class="fa fa-gavel" aria-hidden="true"></i> 开发小能手</div>
                     </div>
                     <div>
-                    	<a target="_blank" href="http://json.ofcoder.com">
+                        <a target="_blank" href="https://unbug.github.io/codelf/">
                             <div class="item">
-                                <div class="no-logo">json</div>
+                                <div class="no-logo">CODELF变量命名</div>
                             </div>
                         </a>
-                        <a target="_blank" href="http://shapes.softartstudio.com/">
+                    	<a target="_blank" href="https://www.json.cn/">
                             <div class="item">
-                                <div class="no-logo">Shape生成</div>
+                                <div class="no-logo">JSON在线解析</div>
                             </div>
                         </a>
-                         <a target="_blank" href="https://mvnrepository.com">
+                        <a target="_blank" href=https://tool.lu/timestamp/">
                             <div class="item">
-                                <div class="no-logo">mvn repository</div>
+                                <div class="no-logo">时间戳</div>
+                            </div>
+                        </a>
+                         <a target="_blank" href="https://packagist.org/">
+                            <div class="item">
+                                <div class="no-logo">Packagist Repository</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://jwt.calebb.net/">
+                            <div class="item">
+                                <div class="no-logo">JWT在线解析</div>
                             </div>
                         </a>
                         <a target="_blank" href="https://tool.lu/">
@@ -172,6 +204,7 @@
                         </a>
                     </div>
                 </div>
+
                  <!-- 常用网站 -->
                 <div class="box">
                     <a href="#" name="often"></a>
@@ -266,6 +299,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- 技术博客 -->
                 <div class="box">
                     <a href="#" name="sill"></a>
@@ -349,32 +383,51 @@
                         </a>
                     </div>
                 </div>
-                <!-- 参考文档 -->
+
+                <!-- 开发文档 -->
                 <div class="box">
                     <a href="" name="docs"></a>
                     <div class="sub-category">
-                        <div><i class="iconfont icon-wendangdocument78"></i>参考文档</div>
+                        <div><i class="fa fa-book" aria-hidden="true"></i> 开发文档</div>
                     </div>
                     <div>
-                        <a target="_blank" href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc">
+                        <a target="_blank" href="https://learnku.com/docs/laravel">
                             <div class="item">
-                                <div class="logo"><img src="img/spring.png" alt="spring"> SpringMVC</div>
-                                <div class="desc">优秀的后端开源架构</div>
+                                <div class="logo"><img src="https://cdn.learnku.com/uploads/images/201802/28/1/Jk8mC7SGI5.jpg!/both/400x400" alt="Laravel"> Laravel 中文文档</div>
+                                <div class="desc">Laravel - 简洁、优雅的PHP开发框架</div>
                             </div>
                         </a>
-                        <a target="_blank" href="http://dubbo.apache.org/zh-cn/docs/source_code_guide/dubbo-spi.html">
+                        <a target="_blank" href="http://sites.thinkphp.cn/1556331">
                             <div class="item">
-                                <div class="logo"><img src="img/dubbo.png" alt="dubbo"> Dubbo</div>
-                                <div class="desc">分布式服务治理</div>
+                                <div class="logo"><img src="http://www.thinkphp.cn/Public/new/img/header_logo.png" alt="spring"> ThinkPHP 文档</div>
+                                <div class="desc">ThinkPHP - 中文WEB应用开发框架</div>
                             </div>
                         </a>
-                        <a target="_blank" href="http://v3.bootcss.com/">
+                        <a target="_blank" href="https://hyperf.wiki">
+                            <div class="item">
+                                <div class="logo"><img src="https://hyperf.wiki/logo.png" alt="hyperf"> Hyperf</div>
+                                <div class="desc">Hyperf - 高性能、高灵活性的 PHP 协程框架</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.workerman.net/">
+                            <div class="item">
+                                <div class="logo"><img src="https://www.workerman.net/img/workerman_logo.png" alt="Workerman"> Workerman</div>
+                                <div class="desc">Workerman - 高性能异步PHP socket即时通讯框架</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://course.swoole-cloud.com/">
+                            <div class="item">
+                                <div class="logo"><img src="https://course.swoole-cloud.com/favicon.ico" alt="Swoole"> Swoole微课程</div>
+                                <div class="desc">Swoole微课程</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.bootcss.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/bootstrap-favicon.png" alt="Bootstrap"> Bootstrap</div>
                                 <div class="desc">基于HTML/CSS/Javscript的前端框架</div>
                             </div>
                         </a>
-                        <a target="_blank" href="http://v3.bootcss.com/">
+                        <a target="_blank" href="https://cn.vuejs.org/">
                             <div class="item">
                                 <div class="logo"><img src="img/vue-favicon.png" alt="Vue.js"> Vue.js</div>
                                 <div class="desc">构建数据驱动的web界面的渐进式框架</div>
@@ -382,6 +435,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- 设计资源 -->
                 <div class="box">
                     <a href="" name="design"></a>
@@ -511,6 +565,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- 学无止境 -->
                 <div class="box">
                     <a href="#" name="study"></a>
@@ -556,6 +611,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- 网络运营 -->
                 <div class="box">
                     <a href="" name="operation"></a>
@@ -605,6 +661,7 @@
                         </a>
                     </div>
                 </div>
+
                 <footer class="footer">
                     <div style="display: none;">
                         <a href="https://info.flagcounter.com/MnzJ"><img src="https://s04.flagcounter.com/count/MnzJ/bg_FFFFFF/txt_000000/border_726EE0/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
@@ -616,8 +673,16 @@
                         </div>
                     </div>
                 </footer>
-                <div id="fixedBar"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></div>
+
+                <div id="fixedBar">
+                    <svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path>
+                    </svg>
+                </div>
+            </div>
         </section>
+    </div>
+</body>
         <script src="js/jquery.js"></script>
         <script src="js/function.js"></script>
         <script>
@@ -681,6 +746,5 @@
             $('html,body').animate({scrollTop:'0px'},800);
         })
         </script>
-</body>
 
 </html>
