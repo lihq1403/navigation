@@ -102,7 +102,7 @@ function search_click(engine){
             if (engine === 'baidu') {
                 search("https://www.baidu.com/s?wd=" + v)
             } else if (engine === 'google') {
-                search("https://www.google.com.hk/search?q=" + v)
+                search("https://www.google.com/search?q=" + v)
             } else if (engine === 'github') {
             	search('https://github.com/search?q=' + v)
             } else if (engine === 'stackoverflow') {
@@ -113,6 +113,12 @@ function search_click(engine){
             	search('https://s.geekbang.org/search/c=0/k=' + v + '/t=')
             } else if (engine === 'google-image') {
             	search('https://www.googlebridge.com/search?q=' + v )
+            } else if (engine === 'dogedoge') {
+                search('https://www.dogedoge.com/results?q=' + v )
+            } else if (engine === 'bilibili') {
+                search('https://search.bilibili.com/all?keyword=' + v )
+            } else if (engine === 'translation') {
+                search('https://fanyi.baidu.com/#zh/en/' + v )
             }
         }
     }
